@@ -11,6 +11,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SparePartsDepartmentController;
 use App\Http\Controllers\SparePartsItemsController;
 use App\Http\Controllers\StripePaymentController;
+use App\Http\Controllers\ViewWebsiteController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -71,10 +72,31 @@ Route::resource('dashboard/accessorie', AccessorieController::class)->middleware
 Route::resource('dashboard/contact', ContactController::class)->middleware('auth');
 
 //show only 5 sparePartsItems in Main Page
-Route::get('/', [SparePartsItemsController::class, 'view']);
-
+// Route::get('/', [SparePartsItemsController::class, 'view']);
 //show all sparePartsItems in Main Page
-Route::get('/website/ShopNowSparePartsItems', [SparePartsItemsController::class, 'ShopNowSparePartsItems']);
+Route::get('/website/shopNowSparePartsItems', [SparePartsItemsController::class, 'ShopNowSparePartsItems']);
+
+
+//show only 5 detergent in Main Page
+// Route::get('/', [DetergentController::class, 'view']);
+//show all detergent in Main Page
+Route::get('/website/shopNowDetergent', [DetergentController::class, 'ShopNowDetergent']);
+
+
+//show only 5 accessorie in Main Page
+// Route::get('/', [AccessorieController::class, 'view']);
+
+//show all accessorie in Main Page
+Route::get('/website/shopNowAccessorie', [AccessorieController::class, 'ShopNowAccessorie']);
+
+
+//show only 5 oils in Main Page
+// Route::get('/', [OilsController::class, 'view']);
+//show all oils in Main Page
+Route::get('/website/shopNowOil', [OilsController::class, 'shopNowOil']);
+
+
+Route::resource('/', ViewWebsiteController::class);
 
 
 
@@ -82,3 +104,12 @@ Route::get('/website/ShopNowSparePartsItems', [SparePartsItemsController::class,
 Route::get('/website/serviceRequest', function () {return view('website/serviceRequest');});
 Route::get('/website/spareParts', function () {return view('website/spareParts');});
 Route::get('/website/soon', function () {return view('website/soon');});
+
+
+
+
+
+
+Route::get('/test-online', function () {
+    dd('i am online ^_^');
+});

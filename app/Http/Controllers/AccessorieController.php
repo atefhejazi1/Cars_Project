@@ -21,6 +21,24 @@ class AccessorieController extends Controller
         return view('accessorie.index')->with('accessorie', $accessorie)->with('featuredItems',$featuredItems);
     }
 
+     public function view()
+    {
+        $accessorie = Accessorie::paginate(5);
+        $featuredItems = Featured_items::all();
+        
+        return view('index')->with('accessorie', $accessorie)->with('featuredItems', $featuredItems);
+    }
+
+
+    public function ShopNowAccessorie()
+    {
+        $accessorie = Accessorie::paginate(5);
+        $featuredItems = Featured_items::all();
+        
+        return view('/website/ShopNowAccessorie')->with('accessorie', $accessorie)->with('featuredItems', $featuredItems);
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *

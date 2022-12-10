@@ -22,6 +22,24 @@ class DetergentController extends Controller
         return view('detergent.index')->with('detergent', $detergent)->with('featuredItems', $featuredItems);
     }
 
+     public function view()
+    {
+        $detergent = Detergent::paginate(5);
+        $featuredItems = Featured_items::all();
+        
+        return view('index')->with('detergent', $detergent)->with('featuredItems', $featuredItems);
+    }
+
+
+    public function ShopNowDetergent()
+    {
+        $detergent = Detergent::paginate(5);
+        $featuredItems = Featured_items::all();
+        
+        return view('/website/ShopNowDetergent')->with('detergent', $detergent)->with('featuredItems', $featuredItems);
+    }
+
+    
     /**
      * Show the form for creating a new resource.
      *

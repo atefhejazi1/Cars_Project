@@ -22,6 +22,23 @@ class OilsController extends Controller
         return view('oils.index')->with('oils', $oils)->with('featuredItems', $featuredItems);
     }
 
+
+    public function view()
+    {
+        $oil = Oils::paginate(5);
+        $featuredItems = Featured_items::all();
+        
+        return view('index')->with('oils', $oil)->with('featuredItems', $featuredItems);
+    }
+
+
+    public function ShopNowOil()
+    {
+        $oil = Oils::paginate(5);
+        $featuredItems = Featured_items::all();
+        
+        return view('/website/shopNowoil')->with('oils', $oil)->with('featuredItems', $featuredItems);
+    }
     /**
      * Show the form for creating a new resource.
      *
