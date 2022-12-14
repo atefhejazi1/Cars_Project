@@ -1,0 +1,299 @@
+body {
+  direction: rtl;
+}
+
+.logo_start {
+  direction: ltr;
+  padding: 10px 0;
+  background-color: #fff;
+  display: none;
+}
+.logo_start img {
+  width: 60px;
+  height: 60px;
+}
+.logo_start form {
+  direction: rtl;
+  margin-top: 5px;
+  position: relative;
+  border-radius: 15px;
+  width: 100%;
+}
+.logo_start .icon-search {
+  position: absolute;
+  top: 16px;
+  left: 15px;
+  color: #000;
+}
+.logo_start .search {
+  border: solid 1px #000;
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.logo_start .form-group {
+  border: none;
+}
+.logo_start .form-group a {
+  position: relative;
+}
+.logo_start .form-group a i {
+  font-size: 24px;
+  padding: 10px 22px;
+  color: #000;
+}
+.logo_start .form-group a div {
+  position: absolute;
+  top: -60px;
+  right: 210px;
+  position: relative;
+  color: #fff;
+  background-color: #7f767d;
+  border-radius: 10px;
+  width: 18px;
+  height: 18px;
+}
+.logo_start .form-group a div span {
+  font-size: 14px;
+  position: absolute;
+  top: -2px;
+  right: 5px;
+}
+.logo_start button {
+  padding: 10px 30px;
+  border: 1px solid #ffb700;
+  background-color: #ffb700;
+  color: #000;
+}
+.logo_start #select_data {
+  background-color: #fff;
+  padding: 10px;
+  padding-left: 50px;
+  border: solid #000 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+}
+.logo_start #select_data option {
+  font-weight: bold;
+  background-color: #cbcbcb;
+  color: #000;
+  font-family: "Cairo", sans-serif;
+}
+
+@media (min-width: 992px) {
+  .logo_start {
+    display: block;
+  }
+}
+.navbar {
+  background-color: #fff;
+  direction: ltr;
+}
+.navbar .navbar-brand img {
+  width: 60px;
+  height: 60px;
+}
+.navbar .nav-link {
+  color: #000;
+  margin-right: 20px;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+}
+.navbar .nav-data {
+  direction: rtl;
+  display: flex;
+  padding-top: 10px;
+}
+.navbar .nav-data .nav-account {
+  padding-right: 30px;
+  display: flex;
+}
+.navbar .nav-data .nav-account i {
+  color: #000;
+  font-size: 30px;
+  padding: 10px;
+  font-weight: bold;
+}
+.navbar .nav-data .nav-account h5 {
+  color: #000;
+  padding: 0px 5px 0 5px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.navbar .nav-data .nav-account span,
+.navbar .nav-data .nav-account a {
+  font-size: 12px;
+  color: #000;
+  padding-top: 3px;
+  font-weight: bold;
+}
+.navbar .nav-data .nav-account .nav-icon-shopping {
+  font-size: 15px;
+  padding-right: 0;
+  padding-top: 1px;
+}
+.navbar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+.navbar .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #cbcbcb;
+  width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 30px 0;
+  font-weight: bold;
+  font-family: "Cairo", sans-serif;
+}
+.navbar .dropdown .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  margin: 0px 30px;
+  border-right: solid 2px #000;
+}
+.navbar .dropdown .dropdown-content a:hover {
+  background-color: #cbcbcb;
+}
+.navbar .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    direction: rtl;
+    background-color: #7f767d;
+  }
+  .navbar .nav-link {
+    color: #fff !important;
+  }
+  .navbar .nav-link:hover {
+    border-bottom: solid 1px #ffb700;
+  }
+  .navbar .navbar-brand {
+    display: none;
+  }
+  .navbar .navbar-brand img {
+    width: 50%;
+  }
+}
+.section-found {
+  text-align: center;
+  padding: 30px 0;
+}
+.section-found img {
+  padding-bottom: 10px;
+}
+.section-found h4 {
+  font-weight: bold;
+  font-family: "Alexandria", sans-serif;
+  font-family: "Almarai", sans-serif;
+  font-family: "Amiri", serif;
+  font-family: "Cairo", sans-serif;
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+
+.form-services h2 {
+  font-family: "Alexandria", sans-serif;
+  font-family: "Amiri", serif;
+  font-family: "Cairo", sans-serif;
+  font-weight: bold;
+  padding-top: 20px;
+  padding-right: 50px;
+}
+.form-services span {
+  color: #ffb700;
+}
+.form-services form {
+  text-align: center;
+  padding: 10px 0 50px;
+}
+.form-services form input {
+  width: 45%;
+  padding: 10px 25px;
+  margin: 12px 10px;
+  border-radius: 5px;
+  border: solid 1px #ffb700;
+}
+.form-services form .input-masseage {
+  width: 92%;
+  padding: 10px 25px 100px;
+  margin: 12px 10px;
+  border-radius: 5px;
+  border: solid 1px #ffb700;
+}
+.form-services form button {
+  background-color: #ffb700;
+  color: #000;
+  width: 92%;
+  font-weight: bold;
+  border-radius: 5px;
+  border: solid 1px #ffb700;
+  padding: 10px 25px;
+  margin-top: 10px;
+}
+.form-services form button:hover {
+  background-color: #000;
+  color: #fff;
+  border: solid 1px #000;
+}
+
+footer {
+  padding: 30px 0;
+  background-color: #7f767d;
+  color: #fff;
+  margin-top: 50px;
+}
+footer h3 {
+  padding: 5px 30px;
+  font-weight: bold;
+}
+footer h4 {
+  color: #ffb700;
+  padding: 10px 0;
+}
+footer h6 {
+  padding: 12px 0;
+}
+footer .footer-icon i {
+  color: #ffb700;
+  padding: 10px;
+  cursor: pointer;
+}
+footer ul {
+  cursor: pointer;
+}
+footer ul li {
+  list-style: none;
+  padding: 5px 0;
+}
+
+.footer-copy-right {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 0;
+}
+.footer-copy-right p {
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+@media (max-width: 991.98px) {
+  .footer-data {
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+  h3 {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .footer-copy-right img {
+    width: 80%;
+  }
+}/*# sourceMappingURL=serviceRequest.css.map */
